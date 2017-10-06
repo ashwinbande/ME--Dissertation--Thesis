@@ -1,0 +1,37 @@
+\begin{thenomenclature} 
+
+ \nomgroup{A}
+
+  \item [{CDH}]\begingroup Computational Diffie Hellman Assumption\nomeqref {2.0}
+		\nompageref{59}
+  \item [{DAA}]\begingroup Direct Anonymous Attestation\nomeqref {2.0}
+		\nompageref{51}
+  \item [{DDH}]\begingroup Decisional Diffie Hellman Assumption\nomeqref {2.0}
+		\nompageref{58}
+  \item [{gpk}]\begingroup group public key\nomeqref {2.0}
+		\nompageref{24}
+  \item [{gsk}]\begingroup group private key\nomeqref {2.0}
+		\nompageref{24}
+  \item [{HMAC}]\begingroup keyed-hash message authentication code\nomeqref {1.0}
+		\nompageref{2}
+  \item [{ID}]\begingroup Identification\nomeqref {1.0}\nompageref{3}
+  \item [{JSON}]\begingroup JavaScript Object Notation\nomeqref {4.0}
+		\nompageref{82}
+  \item [{MAC}]\begingroup Message authentication code\nomeqref {1.0}
+		\nompageref{1}
+  \item [{mpk}]\begingroup member's private key\nomeqref {2.0}
+		\nompageref{24}
+  \item [{PIN}]\begingroup Personal Identification Number\nomeqref {1.0}
+		\nompageref{3}
+  \item [{PKI}]\begingroup Public Key Infrastructure\nomeqref {1.0}
+		\nompageref{7}
+  \item [{RSA}]\begingroup Rivest, Shamir, and Adleman algorithm for asymetric cryptography\nomeqref {2.0}
+		\nompageref{37}
+  \item [{SoK}]\begingroup Signature of Knowledge\nomeqref {2.0}
+		\nompageref{62}
+  \item [{TPM}]\begingroup Trusted Platform Module\nomeqref {2.0}
+		\nompageref{51}
+  \item [{VANET}]\begingroup Vehicular Ad-Hoc Network\nomeqref {1.0}
+		\nompageref{19}
+
+\end{thenomenclature}

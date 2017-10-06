@@ -1,0 +1,442 @@
+\begin{thebibliography}{10}
+
+\bibitem{chaum1991group}
+D.~Chaum and E.~Van~Heyst, ``Group signatures,'' in {\em Advances in
+  Cryptology—EUROCRYPT’91}, pp.~257--265, Springer, 1991.
+
+\bibitem{bellare2003foundations}
+M.~Bellare, D.~Micciancio, and B.~Warinschi, ``Foundations of group signatures:
+  Formal definitions, simplified requirements, and a construction based on
+  general assumptions,'' in {\em Eurocrypt}, vol.~2656, pp.~614--629, Springer,
+  2003.
+
+\bibitem{ateniese1999some}
+G.~Ateniese and G.~Tsudik, ``Some open issues and new directions in group
+  signatures,'' in {\em International Conference on Financial Cryptography},
+  pp.~196--211, Springer, 1999.
+
+\bibitem{lee2010fiat}
+M.-F. Lee, N.~P. Smart, and B.~Warinschi, ``The fiat-shamir transform for group
+  and ring signature schemes.,'' in {\em SCN}, pp.~363--380, Springer, 2010.
+
+\bibitem{zhu2013privacy}
+X.~Zhu, S.~Jiang, L.~Wang, H.~Li, W.~Zhang, and Z.~Li, ``Privacy-preserving
+  authentication based on group signature for vanets,'' in {\em Globecom
+  Workshops (GC Wkshps), 2013 IEEE}, pp.~4609--4614, IEEE, 2013.
+
+\bibitem{malina2015secure}
+L.~Malina, J.~Smrz, J.~Hajny, and K.~Vrba, ``Secure electronic voting based on
+  group signatures,'' in {\em Telecommunications and Signal Processing (TSP),
+  2015 38th International Conference on}, pp.~6--10, IEEE, 2015.
+
+\bibitem{lysyanskaya1998group}
+A.~Lysyanskaya and Z.~Ramzan, ``Group blind digital signatures: A scalable
+  solution to electronic cash,'' in {\em Financial cryptography}, pp.~184--197,
+  Springer, 1998.
+
+\bibitem{manulis2006democratic}
+M.~Manulis, ``Democratic group signatures: on an example of joint ventures,''
+  in {\em Proceedings of the 2006 ACM Symposium on Information, computer and
+  communications security}, pp.~365--365, ACM, 2006.
+
+\bibitem{manulis2006linkable}
+M.~Manulis, A.-R. Sadeghi, and J.~Schwenk, ``Linkable democratic group
+  signatures,'' in {\em International Conference on Information Security
+  Practice and Experience}, pp.~187--201, Springer, 2006.
+
+\bibitem{li2009}
+X.-x. Li, H.-f. Qian, and J.-h. Li, ``Democratic group signatures with
+  threshold traceability,'' {\em Journal of Shanghai Jiaotong University
+  (Science)}, vol.~14, no.~1, pp.~98--101, 2009.
+
+\bibitem{li2009democratic}
+X.~Li, D.~Zheng, K.~Chen, and J.~Li, ``Democratic group signatures with
+  collective traceability,'' {\em Computers \& Electrical Engineering},
+  vol.~35, no.~5, pp.~664--672, 2009.
+
+\bibitem{ding2004leak}
+X.~Ding, G.~Tsudik, and S.~Xu, ``Leak-free group signatures with immediate
+  revocation,'' in {\em Distributed Computing Systems, 2004. Proceedings. 24th
+  International Conference on}, pp.~608--615, IEEE, 2004.
+
+\bibitem{camenisch1999separability}
+J.~Camenisch, M.~Michels, {\em et~al.}, ``Separability and efficiency for
+  generic group signature schemes,'' in {\em Annual International Cryptology
+  Conference}, pp.~413--430, Springer, 1999.
+
+\bibitem{bellare2005foundations}
+M.~Bellare, H.~Shi, and C.~Zhang, ``Foundations of group signatures: The case
+  of dynamic groups. ct-rsa 2005,'' {\em Springer-Verlag, LNCS}, vol.~3376,
+  pp.~136--153, 2005.
+
+\bibitem{camenisch1997efficient}
+J.~Camenisch and M.~Stadler, ``Efficient group signature schemes for large
+  groups,'' {\em Advances in Cryptology—CRYPTO'97}, pp.~410--424, 1997.
+
+\bibitem{ateniese1999group}
+G.~Ateniese and G.~Tsudik, ``Group signatures {\'a} la carte,'' in {\em
+  Symposium on Discrete Algorithms: Proceedings of the tenth annual ACM-SIAM
+  symposium on Discrete algorithms}, vol.~17, pp.~848--849, 1999.
+
+\bibitem{camenisch1998group}
+J.~Camenisch and M.~Michels, ``A group signature scheme with improved
+  efficiency,'' in {\em Asiacrypt}, vol.~98, pp.~160--174, Springer, 1998.
+
+\bibitem{bresson2001efficient}
+E.~Bresson and J.~Stern, ``Efficient revocation in group signatures,'' in {\em
+  Public Key Cryptography}, vol.~1992, pp.~190--206, Springer, 2001.
+
+\bibitem{ateniese2002quasi}
+G.~Ateniese, D.~Song, and G.~Tsudik, ``Quasi-efficient revocation of group
+  signatures,'' in {\em International Conference on Financial Cryptography},
+  pp.~183--197, Springer, 2002.
+
+\bibitem{camenisch2002dynamic}
+J.~Camenisch and A.~Lysyanskaya, ``Dynamic accumulators and application to
+  efficient revocation of anonymous credentials,'' in {\em Crypto}, vol.~2442,
+  pp.~61--76, Springer, 2002.
+
+\bibitem{nakanishi2004group}
+T.~Nakanishi and Y.~Sugiyama, ``A group signature scheme with efficient
+  membership revocation for reasonable groups,'' in {\em Australasian
+  Conference on Information Security and Privacy}, pp.~336--347, Springer,
+  2004.
+
+\bibitem{nakanishi2005group}
+T.~Nakanishi, F.~Kubooka, N.~Hamada, and N.~Funabiki, ``Group signature schemes
+  with membership revocation for large groups.,'' in {\em ACISP}, pp.~443--454,
+  Springer, 2005.
+
+\bibitem{camenisch2004group}
+J.~Camenisch and J.~Groth, ``Group signatures: Better efficiency and new
+  theoretical aspects.,'' in {\em SCN}, vol.~3352, pp.~120--133, Springer,
+  2004.
+
+\bibitem{ateniese2000practical}
+G.~Ateniese, J.~Camenisch, M.~Joye, and G.~Tsudik, ``A practical and provably
+  secure coalition-resistant group signature scheme,'' in {\em Advances in
+  Cryptology—CRYPTO 2000}, pp.~255--270, Springer, 2000.
+
+\bibitem{elgamal1985public}
+T.~ElGamal, ``A public key cryptosystem and a signature scheme based on
+  discrete logarithms,'' {\em IEEE transactions on information theory},
+  vol.~31, no.~4, pp.~469--472, 1985.
+
+\bibitem{tsudik2003accumulating}
+G.~Tsudik and S.~Xu, ``Accumulating composites and improved group signing,'' in
+  {\em Asiacrypt}, vol.~2894, pp.~269--286, Springer, 2003.
+
+\bibitem{kiayias2005efficient}
+A.~Kiayias and M.~Yung, ``Efficient secure group signatures with dynamic joins
+  and keeping anonymity against group managers,'' in {\em Mycrypt},
+  pp.~151--170, Springer, 2005.
+
+\bibitem{kiayias2006secure}
+A.~Kiayias and M.~Yung, ``Secure scalable group signature with dynamic joins
+  and separable authorities,'' {\em International Journal of Security and
+  Networks}, vol.~1, no.~1-2, pp.~24--45, 2006.
+
+\bibitem{chen1994new}
+L.~Chen and T.~P. Pedersen, ``New group signature schemes,'' in {\em Workshop
+  on the Theory and Application of of Cryptographic Techniques}, pp.~171--181,
+  Springer, 1994.
+
+\bibitem{petersen1998convert}
+H.~Petersen, ``How to convert any digital signature scheme into a group
+  signature scheme,'' in {\em Security Protocols}, pp.~177--190, Springer,
+  1998.
+
+\bibitem{ateniese2003efficient}
+G.~Ateniese and B.~De~Medeiros, ``Efficient group signatures without
+  trapdoors,'' {\em Advances in Cryptology-ASIACRYPT 2003}, pp.~246--268, 2003.
+
+\bibitem{nyberg1996message}
+K.~Nyberg and R.~A. Rueppel, ``Message recovery for signature schemes based on
+  the discrete logarithm problem,'' {\em Designs, Codes and Cryptography},
+  vol.~7, no.~1-2, pp.~61--81, 1996.
+
+\bibitem{furukawa2004group}
+J.~Furukawa and S.~Yonezawa, ``Group signatures with separate and distributed
+  authorities.,'' in {\em SCN}, vol.~3352, pp.~77--90, Springer, 2004.
+
+\bibitem{pedersen1991threshold}
+T.~Pedersen, ``A threshold cryptosystem without a trusted party,'' in {\em
+  Advances in Cryptology—EUROCRYPT’91}, pp.~522--526, Springer, 1991.
+
+\bibitem{boneh2004short}
+D.~Boneh, X.~Boyen, and H.~Shacham, ``Short group signatures,'' in {\em
+  Crypto}, vol.~3152, pp.~41--55, Springer, 2004.
+
+\bibitem{camenisch2004signature}
+J.~Camenisch and A.~Lysyanskaya, ``Signature schemes and anonymous credentials
+  from bilinear maps,'' in {\em Annual International Cryptology Conference},
+  pp.~56--72, Springer, 2004.
+
+\bibitem{cramer1998practical}
+R.~Cramer and V.~Shoup, ``A practical public key cryptosystem provably secure
+  against adaptive chosen ciphertext attack,'' in {\em Advances in
+  Cryptology—CRYPTO'98}, pp.~13--25, Springer, 1998.
+
+\bibitem{bichsel2010get}
+P.~Bichsel, J.~Camenisch, G.~Neven, N.~P. Smart, and B.~Warinschi, ``Get shorty
+  via group signatures without encryption.,'' in {\em SCN}, vol.~10,
+  pp.~381--398, Springer, 2010.
+
+\bibitem{balfanz2003secret}
+D.~Balfanz, G.~Durfee, N.~Shankar, D.~Smetters, J.~Staddon, and H.-C. Wong,
+  ``Secret handshakes from pairing-based key agreements,'' in {\em Security and
+  Privacy, 2003. Proceedings. 2003 Symposium on}, pp.~180--196, IEEE, 2003.
+
+\bibitem{castelluccia2004secret}
+C.~Castelluccia, S.~Jarecki, and G.~Tsudik, ``Secret handshakes from
+  ca-oblivious encryption.,'' in {\em Asiacrypt}, vol.~3329, pp.~293--307,
+  Springer, 2004.
+
+\bibitem{vergnaud2006rsa}
+D.~Vergnaud, ``Rsa-based secret handshakes,'' {\em Lecture notes in computer
+  science}, vol.~3969, p.~252, 2006.
+
+\bibitem{jarecki2008beyond}
+S.~Jarecki, J.~Kim, and G.~Tsudik, ``Beyond secret handshakes:
+  Affiliation-hiding authenticated key exchange,'' {\em Topics in
+  Cryptology--CT-RSA 2008}, pp.~352--369, 2008.
+
+\bibitem{manulis2011affiliation}
+M.~Manulis and B.~Poettering, ``Affiliation-hiding authentication with minimal
+  bandwidth consumption,'' in {\em IFIP International Workshop on Information
+  Security Theory and Practices}, pp.~85--99, Springer, 2011.
+
+\bibitem{manulis2011practical}
+M.~Manulis and B.~Poettering, ``Practical affiliation-hiding authentication
+  from improved polynomial interpolation,'' in {\em Proceedings of the 6th ACM
+  Symposium on Information, Computer and Communications Security},
+  pp.~286--295, ACM, 2011.
+
+\bibitem{manulis2010affiliation2}
+M.~Manulis, B.~Poettering, and G.~Tsudik, ``Affiliation-hiding key exchange
+  with untrusted group authorities,'' in {\em Applied Cryptography and Network
+  Security}, pp.~402--419, Springer, 2010.
+
+\bibitem{ateniese2007secret}
+G.~Ateniese, J.~Kirsch, and M.~Blanton, ``Secret handshakes with dynamic and
+  fuzzy matching.,'' in {\em NDSS}, vol.~7, pp.~1--19, 2007.
+
+\bibitem{jarecki2007unlinkable}
+S.~Jarecki and X.~Liu, ``Unlinkable secret handshakes and key-private group key
+  management schemes,'' in {\em Applied Cryptography and Network Security},
+  pp.~270--287, Springer, 2007.
+
+\bibitem{law2009private}
+S.~law Jarecki and X.~Liu, ``Private mutual authentication and conditional
+  oblivious transfer,'' {\em CRYPTO 2009}, p.~90, 2009.
+
+\bibitem{tsudik2006flexible}
+G.~Tsudik and S.~Xu, ``A flexible framework for secret handshakes.,'' in {\em
+  Privacy Enhancing Technologies}, vol.~2006, pp.~295--315, Springer, 2006.
+
+\bibitem{manulis2010taming}
+M.~Manulis, B.~Poettering, and G.~Tsudik, ``Taming big brother ambitions: More
+  privacy for secret handshakes.,'' in {\em Privacy Enhancing Technologies},
+  vol.~6205, pp.~149--165, Springer, 2010.
+
+\bibitem{chaum1983blind}
+D.~Chaum, ``Blind signatures for untraceable payments,'' in {\em Advances in
+  cryptology}, pp.~199--203, Springer, 1983.
+
+\bibitem{chaum1986secure}
+D.~Chaum and J.-H. Evertse, ``A secure and privacy-protecting protocol for
+  transmitting personal information between organizations.,'' in {\em Crypto},
+  vol.~86, pp.~118--167, Springer, 1986.
+
+\bibitem{chaum1985security}
+D.~Chaum, ``Security without identification: Transaction systems to make big
+  brother obsolete,'' {\em Communications of the ACM}, vol.~28, no.~10,
+  pp.~1030--1044, 1985.
+
+\bibitem{damgaard1988payment}
+I.~B. Damg{\aa}rd, ``Payment systems and credential mechanisms with provable
+  security against abuse by individuals,'' in {\em Conference on the Theory and
+  Application of Cryptography}, pp.~328--335, Springer, 1988.
+
+\bibitem{lysyanskaya1999pseudonym}
+A.~Lysyanskaya, R.~L. Rivest, A.~Sahai, and S.~Wolf, ``Pseudonym systems,'' in
+  {\em Selected Areas in Cryptography}, vol.~1758, pp.~184--199, Springer,
+  1999.
+
+\bibitem{camenisch2001efficient}
+J.~Camenisch and A.~Lysyanskaya, ``An efficient system for non-transferable
+  anonymous credentials with optional anonymity revocation,'' {\em Advances in
+  Cryptology—EUROCRYPT 2001}, pp.~93--118, 2001.
+
+\bibitem{camenisch2008efficient}
+J.~Camenisch and T.~Gro{\ss}, ``Efficient attributes for anonymous
+  credentials,'' in {\em Proceedings of the 15th ACM conference on Computer and
+  communications security}, pp.~345--356, ACM, 2008.
+
+\bibitem{camenisch2009accumulator}
+J.~Camenisch, M.~Kohlweiss, and C.~Soriente, ``An accumulator based on bilinear
+  maps and efficient revocation for anonymous credentials,'' in {\em
+  International Workshop on Public Key Cryptography}, pp.~481--500, Springer,
+  2009.
+
+\bibitem{camenisch2010solving}
+J.~Camenisch, M.~Kohlweiss, and C.~Soriente, ``Solving revocation with
+  efficient update of anonymous credentials.,'' in {\em SCN}, vol.~10,
+  pp.~454--471, Springer, 2010.
+
+\bibitem{bichsel2009anonymous}
+P.~Bichsel, J.~Camenisch, T.~Gro{\ss}, and V.~Shoup, ``Anonymous credentials on
+  a standard java card,'' in {\em Proceedings of the 16th ACM conference on
+  Computer and communications security}, pp.~600--610, ACM, 2009.
+
+\bibitem{yang2006anonymous}
+G.~Yang, D.~S. Wong, X.~Deng, and H.~Wang, ``Anonymous signature schemes,'' in
+  {\em Public Key Cryptography}, vol.~3958, pp.~347--363, Springer, 2006.
+
+\bibitem{fischlin2007anonymous}
+M.~Fischlin, ``Anonymous signatures made easy,'' in {\em Public Key
+  Cryptography}, vol.~4450, pp.~31--42, Springer, 2007.
+
+\bibitem{bellare2009partial}
+M.~Bellare and S.~Duan, ``Partial signatures and their applications.,'' {\em
+  IACR Cryptology ePrint Archive}, vol.~2009, p.~336, 2009.
+
+\bibitem{saraswat2009anonymous}
+V.~Saraswat and A.~Yun, ``Anonymous signatures revisited.,'' {\em ProvSec},
+  vol.~5848, pp.~140--153, 2009.
+
+\bibitem{zhang2008strong}
+R.~Zhang and H.~Imai, ``Strong anonymous signatures.,'' {\em Inscrypt},
+  vol.~5487, pp.~60--71, 2008.
+
+\bibitem{camenisch2004efficient}
+J.~Camenisch, M.~Koprowski, and B.~Warinschi, ``Efficient blind signatures
+  without random oracles.,'' in {\em SCN}, vol.~4, pp.~134--148, Springer,
+  2004.
+
+\bibitem{kiayias2006concurrent}
+A.~Kiayias and H.-S. Zhou, ``Concurrent blind signatures without random
+  oracles,'' in {\em SCN}, vol.~6, pp.~49--62, Springer, 2006.
+
+\bibitem{kiayias2008equivocal}
+A.~Kiayias and H.-S. Zhou, ``Equivocal blind signatures and adaptive
+  uc-security,'' {\em Theory of Cryptography}, pp.~340--355, 2008.
+
+\bibitem{pointcheval2000security}
+D.~Pointcheval and J.~Stern, ``Security arguments for digital signatures and
+  blind signatures,'' {\em Journal of cryptology}, vol.~13, no.~3,
+  pp.~361--396, 2000.
+
+\bibitem{abe2001secure}
+M.~Abe, ``A secure three-move blind signature scheme for polynomially many
+  signatures,'' {\em Advances in Cryptology—Eurocrypt 2001}, pp.~136--151,
+  2001.
+
+\bibitem{abe2010structure}
+M.~Abe, G.~Fuchsbauer, J.~Groth, K.~Haralambiev, and M.~Ohkubo,
+  ``Structure-preserving signatures and commitments to group elements.,'' in
+  {\em Crypto}, vol.~6223, pp.~209--236, Springer, 2010.
+
+\bibitem{boldyreva2003threshold}
+A.~Boldyreva, ``Threshold signatures, multisignatures and blind signatures
+  based on the gap-diffie-hellman-group signature scheme,'' in {\em
+  International Workshop on Public Key Cryptography}, pp.~31--46, Springer,
+  2003.
+
+\bibitem{brickell2004direct}
+E.~Brickell, J.~Camenisch, and L.~Chen, ``Direct anonymous attestation,'' in
+  {\em Proceedings of the 11th ACM conference on Computer and communications
+  security}, pp.~132--145, ACM, 2004.
+
+\bibitem{rivest2001leak}
+R.~Rivest, A.~Shamir, and Y.~Tauman, ``How to leak a secret,'' {\em Advances in
+  Cryptology—ASIACRYPT 2001}, pp.~552--565, 2001.
+
+\bibitem{bender2009ring}
+A.~Bender, J.~Katz, and R.~Morselli, ``Ring signatures: Stronger definitions,
+  and constructions without random oracles,'' {\em Journal of Cryptology},
+  vol.~22, no.~1, pp.~114--138, 2009.
+
+\bibitem{liu2004linkable}
+J.~K. Liu, V.~K. Wei, and D.~S. Wong, ``Linkable spontaneous anonymous group
+  signature for ad hoc groups,'' in {\em ACISP}, vol.~4, pp.~325--335,
+  Springer, 2004.
+
+\bibitem{tsang2004separable}
+P.~P. Tsang, V.~K. Wei, T.~K. Chan, M.~H. Au, J.~K. Liu, and D.~S. Wong,
+  ``Separable linkable threshold ring signatures.,'' in {\em Indocrypt},
+  vol.~3348, pp.~384--398, Springer, 2004.
+
+\bibitem{tsang2005short}
+P.~P. Tsang and V.~K. Wei, ``Short linkable ring signatures for e-voting,
+  e-cash and attestation,'' in {\em ISPEC}, vol.~3439, pp.~48--60, Springer,
+  2005.
+
+\bibitem{lee2005convertible}
+K.-C. Lee, H.-A. Wen, and T.~Hwang, ``Convertible ring signature,'' {\em IEE
+  Proceedings-Communications}, vol.~152, no.~4, pp.~411--414, 2005.
+
+\bibitem{zhang2006new}
+C.~Zhang, Y.~Liu, and D.~He, ``A new verifiable ring signature scheme based on
+  nyberg-rueppel scheme,'' in {\em The 8th International Conference on Signal
+  Processing}, 2006.
+
+\bibitem{chandran2007ring}
+N.~Chandran, J.~Groth, and A.~Sahai, ``Ring signatures of sub-linear size
+  without random oracles,'' {\em Automata, Languages and Programming},
+  pp.~423--434, 2007.
+
+\bibitem{kiayias2004traceable}
+A.~Kiayias, Y.~Tsiounis, and M.~Yung, ``Traceable signatures,'' in {\em
+  Eurocrypt}, vol.~3027, pp.~571--589, Springer, 2004.
+
+\bibitem{naor1989universal}
+M.~Naor and M.~Yung, ``Universal one-way hash functions and their cryptographic
+  applications,'' in {\em Proceedings of the twenty-first annual ACM symposium
+  on Theory of computing}, pp.~33--43, ACM, 1989.
+
+\bibitem{damgaard1987collision}
+I.~B. Damg{\aa}rd, ``Collision free hash functions and public key signature
+  schemes,'' in {\em Workshop on the Theory and Application of of Cryptographic
+  Techniques}, pp.~203--216, Springer, 1987.
+
+\bibitem{bellare1993random}
+M.~Bellare and P.~Rogaway, ``Random oracles are practical: A paradigm for
+  designing efficient protocols,'' in {\em Proceedings of the 1st ACM
+  conference on Computer and communications security}, pp.~62--73, ACM, 1993.
+
+\bibitem{babai1985trading}
+L.~Babai, ``Trading group theory for randomness,'' in {\em Proceedings of the
+  seventeenth annual ACM symposium on Theory of computing}, pp.~421--429, ACM,
+  1985.
+
+\bibitem{babai1988arthur}
+L.~Babai and S.~Moran, ``Arthur-merlin games: a randomized proof system, and a
+  hierarchy of complexity classes,'' {\em Journal of Computer and System
+  Sciences}, vol.~36, no.~2, pp.~254--276, 1988.
+
+\bibitem{goldwasser1989knowledge}
+S.~Goldwasser, S.~Micali, and C.~Rackoff, ``The knowledge complexity of
+  interactive proof systems,'' {\em SIAM Journal on computing}, vol.~18, no.~1,
+  pp.~186--208, 1989.
+
+\bibitem{chaum1987improved}
+D.~Chaum, J.-H. Evertse, and J.~Van De~Graaf, ``An improved protocol for
+  demonstrating possession of discrete logarithms and some generalizations,''
+  in {\em Workshop on the Theory and Application of of Cryptographic
+  Techniques}, pp.~127--141, Springer, 1987.
+
+\bibitem{schnorr1991efficient}
+C.-P. Schnorr, ``Efficient signature generation by smart cards,'' {\em Journal
+  of cryptology}, vol.~4, no.~3, pp.~161--174, 1991.
+
+\bibitem{camenisch1997efficientand}
+J.~Camenisch {\em et~al.}, ``Efficient and generalized group signatures,'' in
+  {\em Eurocrypt}, vol.~97, pp.~465--479, Springer, 1997.
+
+\bibitem{chase2006signatures}
+M.~Chase and A.~Lysyanskaya, ``On signatures of knowledge,'' in {\em
+  Proceedings of the 26th annual international conference on Advances in
+  Cryptology}, pp.~78--96, Springer-Verlag, 2006.
+
+\end{thebibliography}

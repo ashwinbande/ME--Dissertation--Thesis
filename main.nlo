@@ -1,0 +1,16 @@
+\nomenclatureentry{aMAC@[{MAC}]\begingroup Message authentication code\nomeqref {1.0}|nompageref}{1}
+\nomenclatureentry{aHMAC@[{HMAC}]\begingroup keyed-hash message authentication code\nomeqref {1.0}|nompageref}{2}
+\nomenclatureentry{aPIN@[{PIN}]\begingroup Personal Identification Number\nomeqref {1.0}|nompageref}{3}
+\nomenclatureentry{aID@[{ID}]\begingroup Identification\nomeqref {1.0}|nompageref}{3}
+\nomenclatureentry{aPKI@[{PKI}]\begingroup Public Key Infrastructure\nomeqref {1.0}|nompageref}{7}
+\nomenclatureentry{aVANET@[{VANET}]\begingroup Vehicular Ad-Hoc Network\nomeqref {1.0}|nompageref}{19}
+\nomenclatureentry{agpk@[{gpk}]\begingroup group public key\nomeqref {2.0}|nompageref}{24}
+\nomenclatureentry{agsk@[{gsk}]\begingroup group private key\nomeqref {2.0}|nompageref}{24}
+\nomenclatureentry{ampk@[{mpk}]\begingroup member's private key\nomeqref {2.0}|nompageref}{24}
+\nomenclatureentry{aRSA@[{RSA}]\begingroup Rivest, Shamir, and Adleman algorithm for asymetric cryptography\nomeqref {2.0}|nompageref}{37}
+\nomenclatureentry{aDAA@[{DAA}]\begingroup Direct Anonymous Attestation\nomeqref {2.0}|nompageref}{51}
+\nomenclatureentry{aTPM@[{TPM}]\begingroup Trusted Platform Module\nomeqref {2.0}|nompageref}{51}
+\nomenclatureentry{aDDH@[{DDH}]\begingroup Decisional Diffie Hellman Assumption\nomeqref {2.0}|nompageref}{58}
+\nomenclatureentry{aCDH@[{CDH}]\begingroup Computational Diffie Hellman Assumption\nomeqref {2.0}|nompageref}{59}
+\nomenclatureentry{aSoK@[{SoK}]\begingroup Signature of Knowledge\nomeqref {2.0}|nompageref}{62}
+\nomenclatureentry{aJSON@[{JSON}]\begingroup JavaScript Object Notation\nomeqref {4.0}|nompageref}{82}

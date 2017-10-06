@@ -1,0 +1,94 @@
+\indexentry{security services}{2}
+\indexentry{confidentiality}{2}
+\indexentry{integrity}{3}
+\indexentry{authentication}{3}
+\indexentry{non-repudiation}{4}
+\indexentry{digital signatures}{4}
+\indexentry{Public Key Infrastructure}{7}
+\indexentry{digital certificate}{8}
+\indexentry{registration authority(RA)}{9}
+\indexentry{certificate authority(CA)}{9}
+\indexentry{validation authority(VA)}{9}
+\indexentry{group based authentication}{11}
+\indexentry{group signature}{11}
+\indexentry{correctness}{15}
+\indexentry{unforgeability}{15}
+\indexentry{anonymity}{16}
+\indexentry{full anonymity}{16}
+\indexentry{unlinkability}{16}
+\indexentry{exculpability}{16}
+\indexentry{traceability}{17}
+\indexentry{coalition resistance}{17}
+\indexentry{revocability}{17}
+\indexentry{static group signature scheme}{24}
+\indexentry{dynamic group signature scheme}{26}
+\indexentry{group signature schemes with verifiable opening}{28}
+\indexentry{group signature schemes with distributed authorities}{30}
+\indexentry{blind group signature}{33}
+\indexentry{democratic group signature}{33}
+\indexentry{mediated group signature}{34}
+\indexentry{Bellare Micciancio Warinschi Scheme}{34}
+\indexentry{Bellare Shi Zhang scheme}{35}
+\indexentry{group signature schemes using RSA assumption}{37}
+\indexentry{ACJT scheme}{38}
+\indexentry{Tsudik and Xu scheme}{40}
+\indexentry{Camenisch and Groth scheme}{41}
+\indexentry{Kiayias and Yung Scheme}{42}
+\indexentry{group signature using discrete logarithms}{43}
+\indexentry{Ateniese de Medeiros Scheme}{43}
+\indexentry{Furukawa Yonezawa Scheme}{44}
+\indexentry{Boneh Boyen Shacham Scheme}{45}
+\indexentry{Camenisch Lysyanskaya Scheme}{46}
+\indexentry{Bichsel Camenisch Neven Smart Warinschi Scheme}{47}
+\indexentry{Affiliation Hiding Authentication}{48}
+\indexentry{Anonymous Credential System}{49}
+\indexentry{Anonymous Signatures}{50}
+\indexentry{Blind Signatures}{50}
+\indexentry{Direct Anonymous Attestation (DAA)}{51}
+\indexentry{Ring Signature}{51}
+\indexentry{Ring Signature}{52}
+\indexentry{Trapdoor Permutation}{53}
+\indexentry{One Way Functions}{53}
+\indexentry{Trapdoor Permutation}{54}
+\indexentry{Hash Functions}{55}
+\indexentry{Random Oracle Model}{56}
+\indexentry{Strong RSA Assumption}{57}
+\indexentry{Quadratic Residuosity Assumption}{57}
+\indexentry{decisional Diffie Hellman assumption}{58}
+\indexentry{computational Diffie Hellman assumption}{59}
+\indexentry{Zero Knowledge Proof of Knowledge}{59}
+\indexentry{non interactive zero knowledge proof}{60}
+\indexentry{Schnorr Identification Protocol}{60}
+\indexentry{Signature of Knowledge (SoK)}{62}
+\indexentry{Distribution of authorities}{66}
+\indexentry{Distribution of authorities!Group Manager}{66}
+\indexentry{Distribution of authorities!Opening Manager}{67}
+\indexentry{Distribution of authorities!Revocation Manager}{67}
+\indexentry{Group Signature (Definition)}{68}
+\indexentry{Architecture of Proposed Scheme}{70}
+\indexentry{Model Development}{73}
+\indexentry{Security Parameters}{73}
+\indexentry{Model Development!SETUP}{74}
+\indexentry{Model Development!JOIN}{75}
+\indexentry{Model Development!SIGN}{76}
+\indexentry{Model Development!VERIFY}{77}
+\indexentry{Model Development!OPEN}{78}
+\indexentry{Model Development!REVOKE}{79}
+\indexentry{Implementation}{79}
+\indexentry{Functionality Overview}{87}
+\indexentry{Dynamic Behaviour}{87}
+\indexentry{Distributed Authorities}{88}
+\indexentry{Verifiable Opening}{89}
+\indexentry{Revocation Support}{90}
+\indexentry{Security Analysis}{92}
+\indexentry{correctness}{93}
+\indexentry{unforgeability}{93}
+\indexentry{anonymity}{93}
+\indexentry{unlinkability}{94}
+\indexentry{exculpability}{94}
+\indexentry{traceability}{95}
+\indexentry{Coalition Resistance}{95}
+\indexentry{revocability}{95}
+\indexentry{Cost for Authorities}{96}
+\indexentry{Cost for Members and Verifiers}{97}
+\indexentry{Future Scope}{100}

@@ -1,0 +1,263 @@
+%Security and Performance analysis
+In the earlier chapter, we have discussed the architecture and implementation of proposed group signature scheme. This chapter analyzes the security and performance of the implemented group signature scheme along with an overview of the functionalities is provided by the implemented scheme and its advantages compared with other similar group signature scheme. Then we will discuss the security properties provided by the scheme and their limitations. The computational cost analysis from authorities and members along with verifiers point of view is also provided in this chapter. The subsequent section presents an overview of functionalities of implemented group signature scheme.
+
+\section{Functionality Overview}
+\index{Functionality Overview}
+A vast number of facts needed to be analyzed for choosing a suitable group signature scheme for an application. The features like dynamic ness, verifiable opening, distribution of authorities and ability of revocation mechanism are some of the essential functions a group signature scheme must possess. In this section, we are discussing the functionalities provided by the implemented group signature scheme and comparing it to the most notable group signature schemes discussed in Chapter \ref{chp:lit.survay}. Those schemes are divided on the basis of primary cryptographic assumption used for their implementation.
+
+\subsection{Dynamic Behaviour}
+\index{Dynamic Behaviour}
+The dynamic group signature schemes capable of dynamic addition of members are considered more secure and advanced than the static group signature scheme. Though, static group signatures can be modified to show dynamic behavior. It can be done by precomputing and storing the private keys of the members and allocating them to the members at the time of their joining. This technique has certain security limitations like the precomputed keys are needed to be stored securely by the authority. Also, the authority knowing all the keys can create various attacks like forgery or be framing a member. The dynamic group signature scheme does not have these vulnerabilities and does not require to estimate the number of potential members before the creation of the group.
+
+The implemented group signature scheme is also a dynamic group signature scheme according to the definition provided in section \ref{sub:Dynamic Group Signatures}. The need of pre-computing the private keys of the estimated potential members is not required in this system instead any number of members can join the group at any time. Theoretically, there is always an upper bound present which indicates the maximum possible number of members that can be added to the group. The implemented group signature scheme can add $2^\ell$ members and for a least secure security parameter $\ell$ it can support hundreds of billion possible members. 
+
+From the join algorithm of the implemented group signature scheme discussed in section \ref{subsec:Joinalgo} we can see that the private key of the member is not known to anyone except the member. Even the Group Manager knows a partial key which can only identify the member and used to revoke the membership but not sufficient to forge a signature for framing a member. Therefore the common attacks like framing are not possible in implemented group signature scheme. The join protocol of this scheme is based on the join protocol of ACJT scheme which is considered most secure in the literature of group signature schemes. Therefore the implemented group signature not only have a dynamic behavior but also possess a state of the art security for joining new members. 
+
+\subsection{Distributed Authorities}
+\index{Distributed Authorities}
+For many groups signature schemes, the Group Manager is single authority responsible for various operations of the group. The Group Manager is called a trusted authority because it is assumed that the Group Manager would not do any malicious activities. For many applications, the Group Manager having this enormous power threatens the privacy of the users as well as the safety of the scheme. Therefore some group signature schemes utilize the concept of distributed authorities.
+
+In group signature scheme supporting distributed authorities, the task of Group Manager is divided into multiple authorities like a separate authority for opening the signature. This distribution is done in two different ways. First, just distribute copies of the same private key to multiple authorities. Although this sounds simple, it does not provide any security enhancement. The tasks are divided between authorities, but one authority can perform tasks of other authorities by using his private key because all authorities were holding the same private key. Another option is complicated but more secure. In this technique, the private key is separated according to its elements and each authority is provided with a private key made up of specific elements such that each key can performance its designated task but not sufficient to perform work of other authorities. This same approach is utilized in the implemented group signature scheme.
+
+In the implemented group signature scheme, the task of Group Manager is distributed between three different authorities. The Group Manager is only responsible for assigning private keys of the members and joining them into the group. The Opening Manager is responsible for associating a unique signer member for a given signature. The Revocation Manager is responsible for revoking the membership of a group member. Each authority has enough power to perform their duties without any need of other authority but not enough to perform operations of other authorities. Therefore the trustworthiness of the authorities is much more in the implemented group signature scheme than other similar schemes. 
+
+\subsection{Verifiable Opening}
+\index{Verifiable Opening}
+The verifiable opening functionality provides an additional trust for the opening entity. In many group signature scheme, the task of the opening signature is assigned to an entity of confidence and that authority announces original signer of the signature in question. Although,  the authority is trusted it has an absolute power to frame any innocent member or put the blame on a different member. Therefore the confidence in the opening authority is required to be much higher for the efficient functioning of the group.
+
+A more efficient solution to this problem is the implementation of verifiable opening. The verifiable opening allows the opening entity to generate a zero knowledge proof that he associated correct signer member to the signature. The provision of the verifiable opening allows any external verifier to verify the claim pronounced by the opening entity. This functionality reduces the level of trust required in the opening entity and replaces it with verifiable mathematical proof. 
+
+The implemented group signature scheme also allows a verifiable opening of the signatures. The  Opening Manager who is a separate entity responsible for associating a signature to its original signer also provides a zero knowledge proof that the member he claimed to be associated with a signature is, in fact, the original signer of the signature. Therefore the working of the Opening Manager required less trust in him and the proof provides an undeniable evidence against the signer of the signature.
+
+\subsection{Revocation Support}
+\index{Revocation Support}
+The ability to revoke a group member from static or dynamic group signature group is an essential functionality. The main grounds for the revocation of the members are lost or stolen private keys and the misbehaving group members who signed false documents. Very few group signature schemes support revocation because of its hard implementation. Instead, other group signature schemes insist upon resetting the group by regenerating public and private keys of the authorities as well as group members. The problem of the solution is, it is more costly as every time a new key is needed to be generated and distributed to the group members when even a single member is revoked.
+
+A more efficient solution is the verifier local revocation. The verifier local revocation approach allows the non revoked member to continue using them for producing a signature. The verifier local revocation generates and publishes a list of revoked members and the Verify algorithm verifies if the members sign a given signature in the list. If the signature is found to be signed by a revoked member, the verify algorithm declares the signature to be invalid. Although this approach is considered to be most practical in many groups signature scheme, it has some shortcomings. The main disadvantage is that once the list becomes large the time required for verification is increases linearly therefore standard operations of verification of signatures needed much more time. 
+
+The implemented group signature scheme also uses verifier local revocation approach to allow the revocation of the group members. But the approach found a perfect middle point between resetting the group and linear incrementing time for verification. The Revocation Manager as a separate authority for revocation adds the identity of the revoked member into the revocation list. The list also has a predefined threshold. When the list crosses this predefined threshold, the Group Manager resets the group public key by just changing some elements so that the private key of any authority need not be replaced or recalculated and redistributes new membership certificates to all non revoked members. The advantages of this approach are that it has all the benefits of previous methods but fewer disadvantages of them. Another advantage is that the Opening Manager can open the signature issued previously before resetting the group. 
+
+\subsection{Comparison with Other Schemes}
+The following table shows a comparison between various group signature schemes including implemented scheme according to the functionalities provided by them.
+
+\begin{table}[!h]
+\begin{threeparttable}
+\renewcommand{\arraystretch}{1.3}
+\caption{Comparison of various schemes according to functionalities.}
+\label{table:functionalities}
+\centering
+\begin{tabular}{| >{\arraybackslash}m{1.3in} |>{\centering\arraybackslash}m{0.5in} |>{\centering\arraybackslash}m{0.7in} |>{\centering\arraybackslash}m{0.8in} |>{\centering\arraybackslash}m{1in} |>{\centering\arraybackslash}m{0.9in} |}
+
+%\begin{tabular}{| l | c | c | c | c | c |}
+\hline 
+\textbf{Group Signature} & \textbf{Static} & \textbf{Dynamic} & \textbf{Verifiable Opening} & \textbf{Distributed Authorities} & \textbf{Revocation} \\ 
+\hline\hline
+
+ACJT Scheme			& \xmark & \cmark & \cmark & \xmark & \xmark \\ \hline
+TX Scheme		 	& \xmark & \cmark & \xmark & \xmark & \cmark \\ \hline
+CG Scheme  		 	& \cmark & \xmark & \xmark & \xmark & \xmark \\ \hline
+KY Scheme  		 	& \xmark & \cmark & \cmark & \cmark & \xmark \\ \hline\hline
+AM Scheme  		 	& \xmark & \cmark & \cmark & \xmark & \xmark \\ \hline
+FY Scheme  		 	& \xmark & \cmark & \cmark & \cmark & \xmark \\ \hline\hline
+BBS Scheme		 	& \cmark & \xmark & \xmark & \xmark & \xmark \\ \hline
+CL Scheme		 	& \xmark & \cmark & \xmark & \cmark & \xmark \\ \hline
+BCNSW Scheme	 	& \xmark & \cmark & \cmark & \xmark & \xmark \\ \hline\hline
+Implemented Scheme	& \xmark & \cmark & \cmark & \cmark & \cmark \\ \hline
+
+\end{tabular}
+\begin{tablenotes}
+\item \cmark -- functionality is available. \hspace{0.5in} \xmark -- functionality is not available.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\section{Security Analysis}\index{Security Analysis}
+This section provides a detailed analysis of the security of implemented group signature scheme. The security of a group signature scheme is dependent on the number of different security properties possessed by the scheme. The following table shows a comparison of various important security properties of different notable group signatures schemes along with the implemented group signature scheme.
+\begin{table}[!h]
+\begin{threeparttable}
+\renewcommand{\arraystretch}{1.3}
+\caption{Security properties of group signature schemes.}
+\label{table:securityproperties}
+\centering
+\begin{tabular}{| >{\arraybackslash}m{1.5in} |>{\centering\arraybackslash}m{0.6in} |>{\centering\arraybackslash}m{0.8in} |>{\centering\arraybackslash}m{0.7in} |>{\centering\arraybackslash}m{0.8in} |>{\centering\arraybackslash}m{0.8in} |}
+
+%\begin{tabular}{| l | c | c | c | c | c |}
+\hline 
+\textbf{Group Signature} & \textbf{Anon.} & \textbf{Traceabl.} & \textbf{Exculp.} & \textbf{Col. Res.} & \textbf{Revocabl.} \\ 
+\hline\hline
+
+ACJT Scheme		 	& full	 & insider & full & full 	 & N/A  \\ \hline
+TX Scheme		 	& insider& insider & full & partial  & full \\ \hline
+CG Scheme  		 	& full	 & full	   & full & partial  & N/A  \\ \hline
+KY Scheme  			& full	 & insider & full & partial  & N/A  \\ \hline\hline
+AM Scheme  		 	& full	 & insider & full & partial  & N/A  \\ \hline
+FY Scheme  		 	& full 	 & insider & full & partial  & N/A  \\ \hline\hline
+BBS Scheme		 	& partial& full	   & full & partial  & N/A  \\ \hline
+CL Scheme		 	& full 	 & insider & full & partial  & N/A  \\ \hline
+BCNSW Scheme	 	& insider& insider & full & full 	 & N/A  \\ \hline\hline
+Implemented Scheme	& partial& insider & full & full 	 & full \\ \hline
+
+\end{tabular}
+\begin{tablenotes}
+\item \textbf{Anon.} - Anonymity; \textbf{Traceabl.} - Traceability; \textbf{Exculp.} - Exculpability;
+\item \textbf{Col. Res.} - Coalition resistance; \textbf{Revocabl.} - Revocability.
+
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+From the above table, one can conclude that the implemented group signature scheme is found to be a superior and more secure than the other schemes because of the vast number of security properties provided by it. As the scheme is based on the ACJT group signature scheme, full coalition resistance is provided in the scheme.
+\subsection{Correctness}
+\index{correctness} From the implementation of the group signature scheme we can see that:
+\begin{itemize}
+\item The signatures generated for messages are always of constant length.
+\item Every valid signature produced by the group member is always validated as valid by the Verify algorithm.
+\item The Open Manager can always associate a unique signer to a given signature and claimed signer is always original signer of the signature. 
+\end{itemize}
+From the above observation, we are able to conclude that implemented scheme has the security property correctness implemented in it.
+
+\subsection{Unforgeability}
+\index{unforgeability}
+The implemented group signature scheme uses Schnorr identification protocol from section \ref{subsection:Schnorr Identification Protocol} and an adaptation of signature of knowledge (SoK) discussed in section \ref{subsection:Signature of Knowledge}. The Schnorr identification protocol prevents:
+\begin{itemize}
+\item The verifier to produce a Forged proof provided by the prover.
+\item A masquerader to generate a valid proof.
+\end{itemize}
+The above propositions are proved in the \cite{schnorr1991efficient}. Also from the section \ref{sub:random oracle model}, if the hash function $\mathcal{H}$ indeed behaves as a random oracle and generate hash digests as a random value. It is not possible to predict the output of $\mathcal{H}$. 
+
+Therefore from the statement presented above, we can conclude that the implemented group signature scheme has security property unforgeability and no one other than a valid group member holding a valid private key can generate a signature that gets verified as valid by the Verify algorithm.
+
+\subsection{Anonymity}
+\index{anonymity}
+For a given valid signature $(C, s_1, s_2, s_3, T_1, T_2, T_3)$ deciding the actual signer of that signature is computationally infeasible to everyone except the Opening Manager holding the secret opening key. The secret opening key generated at starting of the group act as a trapdoor permutation discussion section \ref{sub:Trapdoor Permutations} and the opening key serves as a trap door that can revert a one way function. Moreover, the generated signature is an adaptation of noninteractive zero knowledge protocols which does not reveal any information about the signer. Therefore we can conclude that the implemented group signature scheme has the security property anonymity. 
+
+But for an entity knowing the secret key $[A_i, E_i]$ of a member $i$ can decide whether that member $i$ signed a given signature or not if he tried to find out $T_2^{E_i} =^? T_3 (~mod n)$. Therefore it is clear that implemented signature scheme does not provide full anonymity but instead provide partial anonymity from the notations of Bellare's model \cite{bellare2003foundations}.
+
+\subsection{Unlinkability}
+\index{unlinkability}
+From Sign algorithm of implemented group signature scheme discussed in \ref{pro:sign}, we can see that each signature generation required four random numbers $(w, r_1, r_2, r_3)$. Therefore deciding whether given two different signatures $(C, s_1, s_2, s_3, T_1, T_2, T_3)$ and $(\tilde{C}, \tilde{s}_1, \tilde{s}_2, \tilde{s}_3, \tilde{T}_1, \tilde{T}_2, \tilde{T}_3)$ were computed by the same signer is computationally infeasible. 
+
+This problem can be seen as a form of discrete logarithm problem in which to link a given signature required to solve and find out $Dlog_y(T_1/\tilde{T}_1)$ and $Dlog_g(T_2/\tilde{T}_2)$ are same or not which is assumed to be impossible form decisional Diffie Hellman assumption provided in section \ref{sub:DDH}.
+
+\subsection{Exculpability}
+\index{exculpability}
+The definition \ref{pro:definition} states that the group signature scheme having exculpability property has neither a group member nor any group authority like Group Manager can produce a signature that can be traced back to other members signature. Therefore there are two possible cases for framing.
+
+\begin{itemize}
+\item Another member produces a signature: Any other member does not know the private key of another member. Therefore generating a signature to frame another member $i$ required knowledge of private key tuple $[A_i, E_i, x_i]$ hence no member can create a valid signature on behalf of member $i$.
+\item Group Manager produces the signature: From the Join protocol of implemented group signature scheme discuss in section \ref{subsec:Joinalgo} we can see that the Group Manager have knowledge part of private key tuple $[A_i, E_i]$. Therefore to generate a signature which can be traced as a signature of member $i$, the Group Manager required to calculate $x_i$ of member $i$. From the Join protocol, we can see that the Group Manager only have knowledge of $C_2 = a^{x_i}(mod~n)$, therefore, the Group Manager required to solve $\log_a C_2$ to calculate $x_i$ which is assumed to be impossible from computational Diffie Hellman assumption provided in section \ref{sub:CDH}. 
+\end{itemize}
+Therefore we can conclude that even the Group Manager fails to calculate response $s_2$ and cannot generate a valid signature for framing member $i$.
+
+\subsection{Traceability}
+\index{traceability}
+For a valid signature verified by the Verify algorithm, it can be concluded that the commitments $T_1$ and $T_2$ are in correct form and hence only lead back to $A_i$ of a unique member, if the secret opening key $\mathcal{S}_{om} = (x)$ is known. Therefore the Opening Manager can always obtain $A_i$ of user $U_i$ for every valid signature. Thus we can conclude that the implemented scheme has the security property traceability by which every valid signature is possible to be associated with its original signer member $U_i$.
+
+\subsection{Coalition Resistance}
+\index{Coalition Resistance}
+The implemented group signature scheme uses similar Join protocol as of the ACJT scheme. Hence the proofs of coalition resistance given in \cite{ateniese2000practical} can also be utilized for implemented signature scheme. Therefore we can conclude that if $\mathcal{H}$ is behaves as a true random oracle and produces coalition resistant output, then there is only a negligible probability that any $\mathcal{H}_1 = \mathcal{H}_2$.
+
+\subsection{Revocability}
+\index{revocability}
+The Revoke procedure of the implemented scheme provided in section \ref{pro:revoke} shows that the List of revoked member contains $E_i$ of revoked member $U_i$. The Verify algorithm checks that $T_2^{E_i} = T_3 (~mod n)$ and therefore it is not possible to generate a valid signature for a member $U_i$ whose $E_i$ in the List of revoked member. The Verify algorithm can quickly verify that a signature is from a revoked member or not while verifying it.
+
+\section{Performance Overview}
+Practical use of a group signature scheme often depends on the computational cost required for its execution. The computational cost depends on the assumptions on which the signature scheme is depended like RSA assumption. Also, the extended properties like revocation or verifiable proofs also increase the computational cost of a group signature scheme. The following analysis of group signature schemes estimates the complexity of most costly operations of various groups signature schemes described in literature review along with the implemented group signature scheme. This comparison provides measurement of the efficiency of discussed schemes. The analysis considers modular exponent in cyclic groups and pairing evaluation as of maximum complexity and cost. 
+\subsection{Cost for Authorities}
+\index{Cost for Authorities}
+\begin{table}[!h]
+\begin{center}
+\begin{threeparttable}
+\renewcommand{\arraystretch}{1.3}
+\caption{Computational complexity for group authorities.}
+\label{table:Computational complexity for group authorities}
+\begin{tabular}{| l | c | c | c |}
+\hline 
+\textbf{Group Signature} & \textbf{SetUp} & \textbf{Join} & \textbf{Open} \\
+\hline\hline
+
+ACJT Scheme		  & $1E$ 	  & $\approx 14E$& $\approx 21E$ 		\\ \hline
+TX Scheme		  & $1E$	  & $1E$ 		 & $\approx 21E$ 		\\ \hline
+CG Scheme  		  & $2E + 4mE$& N/A 		 & $\approx 13E$ 		\\ \hline
+KY Scheme  		  & $2E$	  & $2E$		 & $\approx 17E$ 		\\ \hline\hline
+AM Scheme  		  & $2E$ 	  & $5E$  		 & $\mathcal{O}(k)E$	\\ \hline
+FY Scheme  		  & $2E$ 	  & $\approx 3E$ & $\mathcal{O}(k)E$	\\ \hline\hline
+BBS Scheme		  & $3E + 1mE$& N/A 		 & $\approx 20E + 10P$	\\ \hline
+CL Scheme		  & $7E$ 	  & $6E + 1P$	 & $\approx 20E + 8P$ 	\\ \hline
+BCNSW Scheme	  & $2E$ 	  & $17E+ 1P$ 	 & $4E + 9P + 3mP$ 		\\ \hline\hline
+Implemented Scheme& $1E$	  & $14E$ 		 & $\approx 21E$ 		\\ \hline
+
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item \textbf{E} - modular exponentiations; \textbf{P} - pairing evaluations; \textbf{k} - output length of a hash function. \textbf{m} - number of group members.
+\end{tablenotes}
+\end{threeparttable}
+\end{center}
+\end{table}
+The table \ref{table:Computational complexity for group authorities} shows the computational complexity and overhead for the authorities that manage the group. For dynamic group signature schemes, the Join operation is executed between Group Manager and group members. The above table shows the cost for Group Manager. Note that the complexity of Setup algorithm does not matter because it should be executed only once.
+
+
+\subsection{Cost for Members and Verifiers}
+\index{Cost for Members and Verifiers}
+The table \ref{table:Computational complexity for group members and verifiers} provides a comparison of efficiencies of various schemes along with implemented group signature scheme regarding the non-authority, i.e., done by members of verifiers operations. Group members execute the Join and Sign algorithms and verifiers execute Verify algorithm. Note that from member’s point of view the Join operation is performed only once and hence does not have much significance for a scheme.
+\begin{table}[!h]
+\begin{center}
+\begin{threeparttable}
+\renewcommand{\arraystretch}{1.3}
+\caption{Computational cost for members and verifiers.}
+\label{table:Computational complexity for group members and verifiers}
+\begin{tabular}{| l | c | c | c |}
+\hline 
+\textbf{Group Signature} & \textbf{Join} & \textbf{Sign} & \textbf{Verify} \\
+\hline\hline
+
+ACJT Scheme		  & $\approx 11E$& $\approx 19E$    & $\approx 18E$ 		\\ \hline
+TX Scheme		  & $1E$		 & $\approx 17E$	& $\approx 16E$ 		\\ \hline
+CG Scheme  		  & N/A			 & $\approx 10E$    & $\approx 12E$ 		\\ \hline
+KY Scheme  		  & $0E$		 & $\approx 13E$    & $\approx 14E$ 		\\ \hline\hline
+AM Scheme  		  & $6E$ 	 	 & $\mathcal{O}(k)E$& $\mathcal{O}(k)E$	    \\ \hline
+FY Scheme  		  & $\approx 5E$ & $\mathcal{O}(k)E$& $\mathcal{O}(k)E$	    \\ \hline\hline
+BBS Scheme		  & N/A			 & $12E + 5P$       & $\approx 18E + 10P$	\\ \hline
+CL Scheme		  & $2E$ 	 	 & $16E + 4P$	    & $\approx 16E + 8P$ 	\\ \hline
+BCNSW Scheme	  & $15E + 3P$ 	 & $4E+ 3P$ 	    & $2E + 5P$   	 	    \\ \hline\hline
+Implemented Scheme& $\approx 11E$& $\approx 19E$    & $\approx 18E$ 		\\ \hline
+
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item \textbf{E} - modular exponentiations; \textbf{P} - pairing evaluations; \textbf{k} - output length of a hash function. \textbf{m} - number of group members.
+\end{tablenotes}
+\end{threeparttable}
+\end{center}
+\end{table}
+
+\subsection{Comparison with ACJT Scheme}
+Although the implemented scheme is based on state of the art ACJT scheme, it has some remarkable differences to the ACJT scheme. The implemented scheme is found to be more efficient than the ACJT scheme. The following table shows a comparison between various algorithms of implemented group signature scheme and ACJT group signature scheme.
+
+\begin{table}[!h]
+\begin{center}
+\begin{threeparttable}
+\renewcommand{\arraystretch}{1.3}
+\caption{Comparison between the ACJT scheme and implemented scheme.}
+\label{table:Comparison between the ACJT scheme and proposed scheme}
+\begin{tabular}{| >{\arraybackslash}m{0.8in} | >{\arraybackslash}m{2.4in} | >{\arraybackslash}m{2.4in} |}
+\hline 
+\textbf{Procedure} & \textbf{ACJT Scheme} & \textbf{Implemented Scheme} 			\\ \hline\hline
+
+SETUP  & Only Group Manager required. & Group Manager and Open Manager required.\\ \hline
+JOIN   & Same                         & Same                                    \\ \hline
+SIGN   & $r_4,d_4,s_4$ required. %
+		 Uses ElGamel Encryption To %
+		 Hide $E_i$.  				  & $r_4,d_4,s_4$ not required. %
+		 								It Hides $E_i$ as $T_2^{E_i}$           \\ \hline    
+VERIFY & No Revocation supported.     & Cross checking with Revocation List.    \\ \hline
+OPEN   & Done by Group Manager.       & Done By separate Opening Manager.       \\ \hline
+REVOKE & Not Supported                & Done by Revocation Manager.             \\ \hline \hline
+Execution Time & 0.599 Sec.			  & 0.510 Sec  							    \\ \hline
+\end{tabular}
+\end{threeparttable}
+\end{center}
+\end{table}
+
+From the above table \ref{table:Comparison between the ACJT scheme and proposed scheme}, it is apparent that the implemented scheme required at least two authorities to produce the public key of the group and the scheme having distributed authorities. The Join operation of ACJT scheme is most secure and efficient. Therefore the implemented scheme adopts the Join procedure same as ACJT scheme except for the use of element $h$. Also the group public key element $h$ is not required in implemented scheme. The Sign operation of implemented scheme reduces the requirement of computing $r_4, d_4, s_4$ and therefore reduce a significant computational cost. Also unlike ACJT scheme, the Sign algorithm does not require any additional ElGamal encryption. The verify algorithm of the implemented scheme also cross-checks with revocation list so the signatures generated by the revoked member should be identified as invalid. Separate opening authority does the opening of signature in implemented scheme. The notable difference between the ACJT scheme and the implemented scheme is the Revoke procedure. The ACJT scheme does not allow revocation of group members whereas implemented scheme have an algorithm which enables revocation of group members by designated revocation authority.
+
+From the Execution time (average) of both the schemes in table \ref{table:Comparison between the ACJT scheme and proposed scheme}, one can clearly see that implemented scheme is about 15\% more faster than ACJT scheme.
